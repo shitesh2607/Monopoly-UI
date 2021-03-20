@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="playersGrp">
+    <!-- palyer1 -->
+    <div class="player1">
+      <div class="plyName">
+        <p >PLAYER1 NAME</p>
+      </div>
+    
+
+      <div class="propName">
+        <span style="float: left;width:80px">KOCHI</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+
+      <div class="propName">
+        <span style="float: left;width:80px">INDORE</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+
+      <div class="propName">
+        <span style="float: left;width:80px">JAIPUR</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+
+      <div class="propName">
+        <span style="float: left; width:80px">KANDIWALI</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+
+      <div class="propName">
+        <span style="float: left;width:80px">PANAJI</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+    </div>
+    <!-- player2 -->
+    <div class="player2">
+      <div class="plyName">
+        <p >PLAYER2 NAME</p>
+      </div>
+      <div class="propName">
+        <span style="float: left;width:80px">AGRA</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+    </div>
+    <!-- player3 -->
+    <div class="player3">
+      <div class="plyName">
+        <p>PLAYER3 NAME</p>
+      </div>
+      <div class="propName">
+        <span style="float: left;width:80px">WATER</span>
+        <button id="smr" onclick="Confirm()">SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+    </div>
+    <!-- player4 -->
+    <div class="player4">
+      <div class="plyName">
+        <p >PLAYER4 NAME</p>
+      </div>
+      <div class="propName">
+        <span style="float: left;width:80px">DELHI</span>
+        <button id="smr" onclick="Confirm()" >SELL</button>
+        <button id="smr" onclick="Confirm()">MORTGAGE</button>
+        <button id="smr" onclick="Confirm()">REDEEM</button>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="board">
+ 
+        <div class="goSquare">
+         <div class="goSquare2">
+         COLLECT<br>
+         200P SALARY<br>
+         AS YOU PASS<br>
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="o1"></div>
+          <div class="o2"></div>
+          <div class="o3"></div>
+          <div class="o4"></div>
+          
+          </div><!-- goSquare2 -->
+        </div><!-- goSquare -->
+        
+        
+         <div class="normalSquare boardBottom" style="right:100px; width:49px;">
+          <div class="brown"></div>
+          <div class="prop">PANAJI</div>
+          <div class="price">60P</div>
+         </div>
+        <div class="normalSquare boardBottom" style="right:149px; width:49px;">
+         <div class="prop">CHEST</div>
+         <img class="cchest" src="https://i.ya-webdesign.com/images/banker-clipart-monopoly-20.gif" width="35">
+        </div>
+        <div class="normalSquare boardBottom" style="right:198px; width:49px;">
+         <div class="brown"></div>
+         <div class="prop">AGRA</div>
+         <div class="price">60P</div>
+        </div>
+        <div class="normalSquare boardBottom" style="right:247px;width:49px;">
+         <div class="prop">INCOME<br><br>TAX</div>
+         <div class="price">PAY 200P</div>
+        </div>
+        <div class="normalSquare boardBottom" style="right:296px;width:52px;">
+         <div class="rrProp">BANDRA</div>
+         <div class="rr">🚂</div>
+         <div class="price">200P</div>
+        </div>
+        <div class="normalSquare boardBottom" style="right:348px;width:49px;">
+         <div class="lightblue"></div>
+         <div class="prop">SUVIDHA<br>SQUARE</div>
+         <div class="price">100P</div>
+        </div>
+        <div class="normalSquare boardBottom" style="right:397px;width:52px;">
+         <div class="rrProp">CHANCE</div>
+        <div class="chanceQ1">?</div>
+        </div>
+        <div class="normalSquare boardBottom" style="right:449px;width:49px;">
+         <div class="lightblue"></div>
+         <div class="prop">BOW<br>
+          STREET</div>
+         <div class="price">100P</div>
+        </div>
+        <div class="normalSquare boardBottom" style="right:498px; width:49px;">
+         <div class="lightblue"></div>
+         <div class="prop">ANTIILIA<br>
+          </div>
+         <div class="price">120P</div>
+        </div>
+        
+        <div class="jailSquare">
+         <div class="just">JUST</div>
+         <div class="visiting">VISITING</div>
+         
+         <div class="inJail">
+          <div class="inJail2">
+           <div class="in">IN</div>
+           <div class="bar1"></div>
+           <div class="bar2"></div>
+           <div class="bar3"></div>
+           <div class="bar4"></div>
+           
+           <div class="jail">JAIL</div>
+         
+           </div>
+         </div>
+         
+        </div><!-- jailSquare -->
+        
+        <div class="leftSide">
+         
+          <div class="normalSquare boardBottom" style="right:-70px;width:49px;">
+          <div class="violet"></div>
+          <div class="prop">ST. CHARLES<br>
+          PLACE</div>
+          <div class="price">140P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:-21px; width:49px;">
+          
+          <div class="utilProp">ELECTRIC</div>
+          <div class="utilIcon">💡</div>
+          <div class="price">150P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:28px;width:49px;">
+          <div class="violet"></div>
+          <div class="prop">STATES<br>
+          AVENUE</div>
+          <div class="price">140P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:77px; width:49px;">
+          <div class="violet"></div>
+          <div class="prop">VIRGINIA<br>
+          AVENUE</div>
+          <div class="price">160P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:125px; width:53px;">
+          <div class="rrProp">ANDHERI<br></div>
+          <div class="rr">🚂</div>
+          <div class="price">200P</div>
+        </div>
+         
+        <div class="normalSquare boardBottom" style="right:178px; width:49px;">
+          <div class="orange"></div>
+          <div class="prop">NAGPUR<br>
+          </div>
+          <div class="price">180P</div>
+         </div>  
+         
+          <div class="normalSquare boardBottom" style="right:227px; width:52px;">
+         <div class="prop">CHEST</div>
+           <img class="cchest" src="https://i.ya-webdesign.com/images/banker-clipart-monopoly-20.gif"
+              width="35"
+              >
+           
+        </div>
+         
+         <div class="normalSquare boardBottom" style="right:279px; width:49px;">
+          <div class="orange" style="width:49px;"></div>
+          <div class="prop">INDORE<br>
+          </div>
+          <div class="price">180P</div>
+         </div> 
+         
+         <div class="normalSquare boardBottom" style="right:328px; width:49px;">
+          <div class="orange"></div>
+          <div class="prop">KOCHI</div>
+          <div class="price">180P</div>
+         </div> 
+         
+         
+        </div><!-- leftSide -->
+       
+        
+        
+        <div class="freeParking">
+         <div class="freeParking2">
+          <div class="free">FREE</div>
+          <div class="car">🚘</div><br><br>
+          <div class="parking">PARKING</div>
+         
+         </div><!-- freeParking2 -->
+        </div><!-- freeParking -->
+        
+        
+        <div class="topSide">
+         <div class="normalSquare boardBottom"style="right:-50px; width:49px;">
+          <div class="red"></div>
+          <div class="prop">LUCKNOW</div>
+          <div class="price">220P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:-4px; width:52px;">
+         <div class="rrProp">CHANCE</div>
+        <div class="chanceQ2">?</div>
+        </div>
+         
+         <div class="normalSquare boardBottom" style="right:48px; width:49px;">
+          <div class="red"></div>
+          <div class="prop">MIRZAPUR</div>
+          <div class="price">220P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:97px; width:49px;">
+          <div class="red"></div>
+          <div class="prop">JAIPUR</div>
+          <div class="price">240P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:146px; width:52px;">
+         <div class="rrProp">CHURCH<br>GATE</div>
+          <div class="rr">🚂</div>
+         <div class="price">200P</div>
+        </div>
+         
+        <div class="normalSquare boardBottom" style="right:198px; width:49px;">
+          <div class="yellow"></div>
+          <div class="prop">PUNE</div>
+          <div class="price">260P</div>
+         </div>  
+         
+         <div class="normalSquare boardBottom" style="right:247px; width:49px;">
+          <div class="yellow"></div>
+          <div class="prop">GUJRAT</div>
+          <div class="price">260P</div>
+         </div>  
+         
+         <div class="normalSquare boardBottom" style="right:296px;width:52px;">
+          
+          <div class="utilProp">WATER</div>
+          <div class="utilIcon">🚰</div>
+          <div class="price">150P</div>
+         </div>
+         
+         <div class="normalSquare boardBottom" style="right:348px; width:49px;">
+          <div class="yellow"></div>
+          <div class="prop">TCET</div>
+          <div class="price">280P</div>
+         </div>
+         
+         
+        </div><!-- topSide -->
+        
+        
+        <div class="gotoJail">
+         <div class="gotoJail2">
+          <div class="goto">PAY</div>
+          <div class="jail2">DAY</div>
+         
+          </div>
+        </div><!-- gotoJail -->
+        
+        
+        
+        <div class="rightSide">
+         
+         <div class="normalSquare boardBottom" style="right:-70px; width:49px;">
+          <div class="green"></div>
+          <div class="prop">KOLKATA</div>
+          <div class="price">300P</div>
+         </div>  
+         
+          <div class="normalSquare boardBottom" style="right:-21px; width:49px;">
+          <div class="green"></div>
+          <div class="prop">CHENNAI</div>
+          <div class="price">300P</div>
+         </div>  
+         
+         <div class="normalSquare boardBottom" style="right:28px; width:52px;">
+         <div class="prop">CHEST</div>
+          <img class="cchest" src="https://i.ya-webdesign.com/images/banker-clipart-monopoly-20.gif"
+              width="35"
+              >
+        </div>
+         
+         <div class="normalSquare boardBottom" style="right:80px; width:49px;">
+          <div class="green"></div>
+          <div class="prop">DELHI</div>
+          <div class="price">320P</div>
+         </div> 
+         
+         <div class="normalSquare boardBottom" style="right:129px; width:52px;">
+         <div class="rrProp">KANDI<br>WALI</div>
+          <div class="rr">🚂</div>
+         <div class="price">200P</div>
+        </div>
+         
+         <div class="normalSquare boardBottom" style="right:181px; width:49px;">
+         <div class="rrProp">CHANCE</div>
+        <div class="chanceQ3">?</div>
+        </div>
+         
+          <div class="normalSquare boardBottom" style="right:230px; width:49px;">
+          <div class="blue"></div>
+          <div class="prop">PARK<br>
+          PLACE</div>
+          <div class="price">350P</div>
+         </div> 
+         
+         <div class="normalSquare boardBottom" style="right:279px;width:49px;">
+         <div class="rrProp">LUXURY<br>TAX</div>
+          <div class="lux">💍</div>
+         <div class="price">PAY 100P</div>
+        </div>
+         
+           <div class="normalSquare boardBottom" style="right:328px; width:49px;">
+          <div class="blue"></div>
+          <div class="prop">MUMBAI</div>
+          <div class="price">400P</div>
+         </div>  
+         
+        </div><!-- rightSide -->
+        
+        <!-- <div class="title">MONOPOLY</div> -->
+        
+        <div class="communityChestDeck" title="Community Chest Cards go Here">
+         
+         <img class="cchest2" src="https://i.ya-webdesign.com/images/banker-clipart-monopoly-20.gif"
+              width="40"
+              >
+        </div> 
+        
+         <div class="chanceDeck" title="Chance Cards go Here">?</div>
+         <!-- DICE -->
+         <div class="dice1">
+          <img src="assets/dice6.png" id="check2">
+          </div>
+
+         <div class="dice2">
+          <img src="assets/dice6.png" id="check1">
+          </div>
+         <div  title="Community Chest Cards go Here"><button onclick="DiceValue()" class="play">PLAY</button> </div>
+        
+       </div> <!-- board -->
+       
+       <script  src="index.js" charset="uth">
+
+       </script> 
+      
+      
+</body>
+</html>
